@@ -1,4 +1,9 @@
-.keys-container{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.white-keys-container{
     border-left: 2px solid black;
     text-align: center;
     height:154px;
@@ -28,6 +33,22 @@
  }
 
 
+
+ .black-keys-container {
+   height: 130px;
+   position: absolute;
+   top: 0;
+ }
+
+ .black-keys span{
+     position: absolute;
+     bottom:0;
+     right:0;
+     left:0;
+     margin:auto;
+     z-index: 3;
+ }
+
 .black-keys {
     width: 30px;
     height: 80px;
@@ -35,10 +56,15 @@
     background: black;
     color: white;
     text-align: center;
-    position:absolute;
+    position:relative;
+    display: inline-block;
+    vertical-align: top;
     top:0;
     right:-18px;
     z-index: 100;
+    margin-left: 8px;
+}
 
-
+#fake1, #fake2 {
+  visibility: hidden;
 }
