@@ -1,12 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Sunshiney);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
 * {
   margin: 0;
   padding: 0;
+  /*font-family: 'Sunshiney', cursive;*/
+  font-family: 'Patrick Hand SC', cursive;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently */
+}
+
+.title {
+  margin: 100px 0 0 180px;
+  border-bottom: 2px solid black;
+}
 
 /*piano*/
 
 .white-keys-container{
+  margin: 148px 0 0 180px;
     border-left: 2px solid black;
     text-align: center;
     height:154px;
@@ -38,6 +57,7 @@
 
 
  .black-keys-container {
+   margin: 293px 0 0 180px;
    height: 130px;
    position: absolute;
    top: 0;
@@ -68,7 +88,7 @@
     margin-left: 8px;
 }
 
-#fake1, #fake2 {
+#fake1, #fake2, #fake3, #fake4 {
   visibility: hidden;
 }
 
@@ -78,6 +98,7 @@
 /*drums*/
 
 .drumsContainer {
+  margin-left: 285px;
   height: 300px;
 }
 
